@@ -9,7 +9,7 @@ import ast
 
 # ── KONFIGURASI HALAMAN ──────────────────────────────────
 st.set_page_config(
-    page_title="Recipe Intelligence Dashboard",
+    page_title="Smart Grocery Planner",
     page_icon="🍳",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -155,7 +155,7 @@ df = load_data()
 
 # ── SIDEBAR ───────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🍳 Recipe Intelligence")
+    st.markdown("## 🍳 Smart Grocery Planner")
     st.markdown("---")
 
     st.markdown("### 🔍 Navigasi")
@@ -185,7 +185,7 @@ with st.sidebar:
     )
 
     st.markdown("---")
-    st.markdown('<small style="color:#6b7280">© 2025 Recipe Intelligence Dashboard</small>', unsafe_allow_html=True)
+    st.markdown('<small style="color:#6b7280">© 2025 Smart Grocery Planner</small>', unsafe_allow_html=True)
 
 # Filter data berdasarkan sidebar
 df_filtered = df[
@@ -198,7 +198,7 @@ df_filtered = df[
 # HALAMAN: OVERVIEW
 # ══════════════════════════════════════════════════════════
 if page == "📊 Overview Dataset":
-    st.markdown('<div class="hero-title">Recipe Intelligence Dashboard</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hero-title">Smart Grocery Planner</div>', unsafe_allow_html=True)
     st.markdown('<div class="hero-subtitle">Analisis mendalam terhadap dataset resep makanan untuk mengurangi food waste dan membantu pengguna memasak lebih cerdas.</div>', unsafe_allow_html=True)
 
     # Metrics
